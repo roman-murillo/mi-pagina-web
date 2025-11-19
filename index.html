@@ -1,88 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="Encabezado">
-        <div class="NavBar1">
-            <h1>SoloConciertos</h1>
+    <h1>Formulario Registro</h1>
+    <form action="/formulario/enviar">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text"  name="nombre"><br><br>
 
-        </div>
-        <div class="NavBar2">
-            <p>Compra tus entradas</p>
-        </div>
-        <div class="NavBar3">
-            <p>Categorias</p>
-            <input type="text" value="Busca por artisa">
-            <p>Ingresa| Registrate</p>
+        <label for="apellido">apellido:</label><br>
+        <input type="text"  name="apellido"><br><br>
 
-        </div>
-    </div>
+        <label for="fecha">fecha:</label><br>
+        <input type="date"  name="fecha"><br><br>
 
-    <div class="Registro">
-        <form action="#" method="post" class="Formulario">
-            <h1>Registrate</h1>
-            <h3>Datos Personales</h3>
-            <label for="nombre"> Nombre
-                <input type="text" name="nombre" id="nombre">
-            </label>
-            <label for="Apellido"> Apellido
-                <input type="text" name="Apellido" id="Apellido">
-            </label>
-            <label for="Edad"> Edad
-                <input type="number" name="Edad" id="Edad">
-            </label>
-            <label for="correo"> correo
-                <input type="email" name="correo" id="correo" value="correo@tuemail.com">
-            </label>
-            <label for="Genero">
+        <label for="produccion">produción:</label><br>
+        <input type="number"  name="produccion"><br><br>
 
-                <input type="radio" id="masculino" name="Genero" value="masculino">
-                <label for="masculino">Masculino</label><br>
+        <select name="turno" >
+            <option value="mañana">Turno mañana</option>
+            <option value="noche">Turno noche</option>
 
-                <input type="radio" id="femenino" name="Genero" value="femenino">
-                <label for="femenino">Femenino</label><br>
-            </label>
-            <br><br>
+        </select><br><br>
 
-            <h3> Información del evento</h3>
-            <label for="Artista"> Eilge tu artista </label>
-            <select name="Artista" id="Artista">
-                <option value="LinkinPark"> Linkin Park</option>
-                <option value="avengedSevenfold">Avenged Sevenfold</option>
-                <option value="Metallica"> Metallica</option>
-            </select>
-            <label for="Fecha"> Fecha
-                <input type="date">
-            </label>
-            <label for="Boletos"> Cantidad Boletos
-                <input type="number">
-            </label>
-            <input type="submit" value="Comprar boletos">
-        </form>
-
-
-    </div>
-    <div class="piePagina">
-        <p>© 2025 Conciertos. Todos los derechos reservados.</p>
-
-        <p>
-            <a href="#">Términos y condiciones</a> |
-            <a href="#">Política de privacidad</a> |
-            <a href="#">Ayuda</a>
-        </p>
-
-    </div>
-
-
-
-
+        <button type="submit">enviar</button>
 </body>
-
 </html>
